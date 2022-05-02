@@ -1,0 +1,79 @@
+/* Наша команда */
+.section--team {
+    @extend .section;
+    background-color: $background-color-secondary;
+}
+
+.card-set {
+    display: flex;
+    @extend %list;
+}
+
+.team-member {
+    background: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.team-member__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-member__name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.team-member__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    @extend %list;
+}
+
+.actions__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: $white-color;
+    color: $color-icon;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+    }
+}
+
+.actions__item:not(:last-child) {
+    margin-right: 10px;
+}
