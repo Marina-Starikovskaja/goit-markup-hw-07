@@ -1,15 +1,15 @@
 /* Наша команда */
-.section--team {
+.section--another-background {
     @extend .section;
     background-color: $background-color-secondary;
 }
 
-.card-set {
+.team {
     display: flex;
     @extend %list;
 }
 
-.team-member {
+.team-item {
     background: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -20,12 +20,12 @@
     }
 }
 
-.team-member__card {
+.team__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-member__name {
+.team__title {
     color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
@@ -35,7 +35,7 @@
     margin-bottom: 10px;
 }
 
-.team-member__profession {
+.team__text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -43,13 +43,13 @@
     margin-bottom: 16px;
 }
 
-.actions {
+.social {
     display: flex;
     justify-content: center;
     @extend %list;
 }
 
-.actions__icon {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +74,6 @@
     }
 }
 
-.actions__item:not(:last-child) {
+.social__item:not(:last-child) {
     margin-right: 10px;
 }

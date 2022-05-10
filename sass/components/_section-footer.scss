@@ -78,7 +78,7 @@
 }
 
 .footer-join__icon {
-    @extend .actions__icon;
+    @extend .social__link;
     background-color: rgba(255, 255, 255, 0.1);
     color: $white-color;
 }
@@ -98,7 +98,7 @@
     margin-right: 12px;
 }
 
-.button-icon--left {
-    @extend .button-icon;
+.social-icon--left {
+    @extend .social-icon;
     margin-left: 10px;
 }
